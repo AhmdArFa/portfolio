@@ -79,6 +79,48 @@ const heroContent = {
         ]
       },
       {
+        key: "notebooklm",
+        name: "MCIT AI NotebookLM",
+        img: "assets/work-notebooklm.jpg",
+        w: 800,
+        h: 600,
+        cat: "GovTech AI · Local LLMs & RAG",
+        year: "2026",
+        accent: "#f59e0b",
+        title: "MCIT AI NotebookLM — Local Ministry Document Intelligence Platform",
+        github: "https://github.com/AhmdArFa/mcit-ai-notebooklm",
+        desc: "منصة ذكاء اصطناعي سيادية لوزارة الاتصالات وتكنولوجيا المعلومات (MCIT) مستوحاة من NotebookLM، تعمل محلياً بنسبة 100% دون اتصال بالإنترنت للحفاظ على سرية الوثائق الحكومية. تستخدم نماذج مكممة Qwen3 4B وتضمينات BGE-M3 عبر Ollama لتحليل وثائق (PDF, DOCX, PPTX) واستخراج المعرفة وتوليد 3 مخرجات وزارية رئيسية.",
+        quote: "فصل الفهم عن التوليد: كل قرار وإحصائية موثقة برقم الصفحة أو الشريحة الأصلية لمنع التخريف وحماية سيادة البيانات الحكومية.",
+        badges: ["100% Air-Gapped & Local", "Ollama Qwen3 4B (Q4_K_M)", "BGE-M3 Embeddings", "FastAPI & React 18", "python-pptx Engine"],
+        modules: [
+          {
+            name: "📄 استخراج المستندات والجداول",
+            sub: "Multi-Format Parsing (PDF / DOCX / PPTX)",
+            desc: "استخراج دقيق للنصوص والجداول المعقدة مع تعقب رقم الصفحة والشريحة الأصلية وملاحظات العرض بدون أي فقدان للبيانات."
+          },
+          {
+            name: "🧠 البحث الدلالي والفهرسة المحلية",
+            sub: "Local RAG & BGE-M3 Embeddings",
+            desc: "تضمين مقطعي دلالي بأبعاد 1024 مع فهرسة متجهات داخلية عبر NumPy Cosine Similarity لحساب أسرع استرجاع محلي."
+          },
+          {
+            name: "📋 ملخصات وزارية موثقة",
+            sub: "Source-Anchored Executive Briefings",
+            desc: "توليد موجزات تنفيذية، مصفوفات قرارات، وتوصيات استراتيجية موثقة برقم الصفحة لضمان دقة اتخاذ القرار القيادي."
+          },
+          {
+            name: "📊 عروض تقديمية قابلة للتعديل (.pptx)",
+            sub: "python-pptx Native Presentation Generator",
+            desc: "توليد شرائح PowerPoint رسمية قابلة للتعديل بـ 7 قوالب قيادية (بطاقات أداء، خرائط طريق، وتحليلات مقارنة)."
+          },
+          {
+            name: "📈 إنفوجرافيك موجه تفاعلي (.svg)",
+            sub: "5 Scalable Vector Infographic Archetypes",
+            desc: "توليد رسوم بيانية فيكتور عالية الجودة للطباعة والنشر الرسمي (مسارات العمليات، الجداول الزمنية، والهياكل التنظيمية)."
+          }
+        ]
+      },
+      {
         key: "nilex",
         name: "NILEX.AI",
         img: "assets/work-nilex.jpg",
@@ -188,9 +230,9 @@ const heroContent = {
       },
       {
         no: "04",
-        title: "LLM Agents & Retrieval Augmented Generation",
-        description: "Vector embeddings, dense semantic retrieval, and agentic workflows using Claude, Gemini, and open-source Hugging Face models.",
-        tags: ["RAG", "Vector DBs", "Claude 3.5", "Gemini Agents", "Transformers", "PEFT"],
+        title: "Sovereign LLMs & Retrieval Augmented Generation",
+        description: "Engineering local-first air-gapped RAG pipelines, quantized models (Qwen3 4B via Ollama), BGE-M3 dense embeddings, and strict citation traceability for ministry document intelligence.",
+        tags: ["Local RAG", "Ollama", "Qwen3", "BGE-M3", "Vector Embeddings", "FastAPI", "Transformers"],
       },
     ],
   },
@@ -203,7 +245,7 @@ const heroContent = {
     skills: {
       title: "I Work With",
       groups: [
-        { name: "AI & ML", items: ["PyTorch", "YOLOv8", "OpenCV", "MediaPipe 3D", "Scikit-Learn", "Transformers", "RAG", "Tesseract OCR"] },
+        { name: "AI & ML", items: ["Local LLMs (Ollama)", "RAG & BGE-M3", "PyTorch", "YOLOv8", "OpenCV", "MediaPipe 3D", "Scikit-Learn", "Transformers", "Tesseract OCR"] },
         { name: "Data & BI", items: ["Power BI (PL-300)", "Microsoft Fabric", "DAX", "SQL Server", "PostgreSQL", "Pandas", "NumPy"] },
         { name: "Backend & Cloud", items: ["FastAPI", "JWT Auth", "Docker", "Microsoft Azure", "REST APIs", "Linux"] },
         { name: "Languages", items: ["Python", "SQL", "R", "JavaScript", "HTML5 / CSS3"] },

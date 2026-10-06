@@ -35,12 +35,13 @@ A bespoke, cinematic scroll-driven portfolio engineered with spatial depth, dark
 ### 4. 🗂️ 3D Selected Works Dolly Carousel
 Flagship production projects with interactive 3D perspective scroll and direct GitHub source links:
 1. **BASEERA (بَصِيرَة) — AI Kinetic Suite for Assistive & Healthcare Technology** — Comprehensive humanitarian computer vision and touchless accessibility platform powered by in-browser MediaPipe WASM/TFLite (21 3D landmarks @ 60 FPS, 100% offline & client-side). Features 4 clinical & assistive suites: *Mutakallim* (Arabic sign-to-speech translator & smart SOS emergency gesture detection), *Ta'afi* (hand motor rehab clinic measuring 0°-180° joint biomechanics with clinical reports), *Taleeq* (touchless air mouse with tremor filter & on-screen Arabic air keyboard), *Tabib* (sterile touchless radiology DICOM viewer with air calipers), and *3D Hologram Studio*.
-2. **NILEX E-Commerce Ecosystem** — Full-stack platform with FastAPI backend, PostgreSQL, and scalable microservices.
-3. **Egyptian National ID OCR Pipeline** — Computer vision pipeline for ID card extraction and validation.
-4. **Smart Healthcare & Hospital Management System** — Comprehensive patient, doctor, and clinic management platform.
-5. **Enterprise Sales & Inventory Analytics** — Power BI dashboards with complex DAX measures and automated KPI reporting.
-6. **Advanced SQL Query Engine & Migration Toolkit** — High-performance ETL pipeline and database migration toolkit.
-7. **Customer Lifetime Value (CLV) & Churn Prediction** — Machine learning predictive modeling for customer retention.
+2. **MCIT AI NotebookLM (Local Ministry Document Intelligence Platform)** — 100% air-gapped, privacy-preserving document intelligence suite engineered for government ministries. Operates on local Ollama hosting quantized Qwen3 4B (`Q4_K_M`) and BGE-M3 embeddings. Generates source-anchored ministerial summaries, editable PowerPoint decks via `python-pptx`, and 5 scalable vector infographics (`.svg`).
+3. **NILEX.AI Smart Agriculture & Crop Pathology Ecosystem** — Combines YOLOv8 fruit detection with ResNet-50 disease classification (Macro-F1 0.978) at sub-3-second latency, FastAPI, Azure, Power BI, and multilingual RAG.
+4. **Egyptian National ID OCR Pipeline** — Automated computer vision and Tesseract OCR pipelines to detect Egyptian ID cards, correct skew/binarization with OpenCV, and extract structured fields with FastAPI & JWT auth at MCIT.
+5. **Hospital Patient Flow & Clinical Revenue Command Center** — Executive BI dashboard tracking 300 patients across 8 departments and EGP 37.44M revenue with star schema and advanced DAX measures, saving 50% executive review time.
+6. **Global Superstore Sales & Profitability Intelligence** — Interactive enterprise BI analyzing 4,117 orders across global regions with multi-currency conversion, OneLake Delta tables, and dynamic executive KPI trees.
+7. **Automated SQL Data Cleansing & Integrity Verification Pipeline** — Cleansed, validated, and deduplicated 4,000+ enterprise records with automated integrity constraints, regex checks, and relational audit logging.
+8. **Customer Lifetime Value (CLV) & Predictive Churn Prevention Engine** — Machine learning classifier achieving 97% accuracy in identifying churn risk factors, segmenting user cohorts, and optimizing retention revenue.
 
 ### 5. 📜 34 Verified Credentials Exhibition Wall
 - **34 Real High-Resolution Certificates:** Authentic credentials from Microsoft, AWS, Google, Stanford, Duke, and ITI.
