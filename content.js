@@ -37,6 +37,19 @@ const heroContent = {
     brand: "Ahmed Gamal Arfa · Portfolio",
     projects: [
       {
+        key: "hand-automation",
+        name: "Hologram Vision AI",
+        img: "assets/work-hand-automation.jpg",
+        w: 800,
+        h: 600,
+        cat: "Computer Vision · 3D AR",
+        year: "2026",
+        accent: "#00f0ff",
+        title: "Hologram Vision & Hand Gesture Suite (Real-Time 3D Holograms & AR Bio-Scanner)",
+        github: "https://github.com/AhmdArFa/hand-automation",
+        desc: "Interactive computer vision suite using OpenCV, MediaPipe 3D hand tracking (21 landmarks @ 60 FPS), Three.js holograms, and FastAPI. Features sacred geometry pinning in thin air, magnetic arc fusion, cranial X-ray bio-scanner, and gesture spell combos.",
+      },
+      {
         key: "nilex",
         name: "NILEX.AI",
         img: "assets/work-nilex.jpg",

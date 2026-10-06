@@ -33,13 +33,14 @@ A bespoke, cinematic scroll-driven portfolio engineered with spatial depth, dark
 - **Engineering Panels:** 4 interactive technical cards mapping Neural Architectures, Pipeline Hardening, and Edge Deployment.
 
 ### 4. 🗂️ 3D Selected Works Dolly Carousel
-6 flagship production projects with interactive 3D perspective scroll and direct GitHub source links:
-1. **NILEX E-Commerce Ecosystem** — Full-stack platform with FastAPI backend, PostgreSQL, and scalable microservices.
-2. **Egyptian National ID OCR Pipeline** — Computer vision pipeline for ID card extraction and validation.
-3. **Smart Healthcare & Hospital Management System** — Comprehensive patient, doctor, and clinic management platform.
-4. **Enterprise Sales & Inventory Analytics** — Power BI dashboards with complex DAX measures and automated KPI reporting.
-5. **Advanced SQL Query Engine & Migration Toolkit** — High-performance ETL pipeline and database migration toolkit.
-6. **Customer Lifetime Value (CLV) & Churn Prediction** — Machine learning predictive modeling for customer retention.
+Flagship production projects with interactive 3D perspective scroll and direct GitHub source links:
+1. **Hologram Vision & Hand Gesture Suite** — Real-time computer vision suite combining OpenCV, MediaPipe 3D hand tracking (21 landmarks @ 60 FPS), Three.js holograms, air-pinch freezing, and gesture spell engine.
+2. **NILEX E-Commerce Ecosystem** — Full-stack platform with FastAPI backend, PostgreSQL, and scalable microservices.
+3. **Egyptian National ID OCR Pipeline** — Computer vision pipeline for ID card extraction and validation.
+4. **Smart Healthcare & Hospital Management System** — Comprehensive patient, doctor, and clinic management platform.
+5. **Enterprise Sales & Inventory Analytics** — Power BI dashboards with complex DAX measures and automated KPI reporting.
+6. **Advanced SQL Query Engine & Migration Toolkit** — High-performance ETL pipeline and database migration toolkit.
+7. **Customer Lifetime Value (CLV) & Churn Prediction** — Machine learning predictive modeling for customer retention.
 
 ### 5. 📜 34 Verified Credentials Exhibition Wall
 - **34 Real High-Resolution Certificates:** Authentic credentials from Microsoft, AWS, Google, Stanford, Duke, and ITI.
