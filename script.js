@@ -864,11 +864,37 @@
       if (!detail) return;
       if (detailImg) { detailImg.src = data.img; detailImg.alt = data.name || data.title || ""; }
       if (detailTitle) {
+        let extraHtml = '';
+        if (data.badges && data.badges.length) {
+          extraHtml += `<div style="display:flex;flex-wrap:wrap;justify-content:center;gap:8px;margin:12px 0 16px;">` +
+            data.badges.map(b => `<span style="font-size:11.5px;font-weight:600;padding:4px 12px;border-radius:999px;background:rgba(255,255,255,0.06);border:1px solid ${data.accent || 'var(--accent)'};color:${data.accent || '#fff'};letter-spacing:0.04em;">${b}</span>`).join('') +
+            `</div>`;
+        }
+        if (data.quote) {
+          extraHtml += `
+            <div style="margin:14px auto 18px;max-width:680px;padding:12px 18px;border-radius:10px;background:rgba(0,240,255,0.05);border-left:3px solid ${data.accent || 'var(--accent)'};color:#e2e8f0;font-size:13.5px;line-height:1.6;text-align:center;font-style:italic;">
+              &ldquo;${data.quote}&rdquo;
+            </div>`;
+        }
+        if (data.modules && data.modules.length) {
+          extraHtml += `<div style="display:grid;grid-template-columns:repeat(auto-fit, minmax(260px, 1fr));gap:12px;margin:18px 0;text-align:left;max-width:760px;width:100%;">` +
+            data.modules.map(m => `
+              <div style="background:rgba(255,255,255,0.03);border:1px solid rgba(255,255,255,0.08);border-radius:10px;padding:12px 14px;">
+                <div style="font-size:13.5px;font-weight:700;color:${data.accent || '#fff'};margin-bottom:3px;">${m.name}</div>
+                <div style="font-size:11px;color:#94a3b8;margin-bottom:6px;font-weight:500;">${m.sub || ''}</div>
+                <div style="font-size:12px;color:rgba(255,255,255,0.72);line-height:1.45;">${m.desc}</div>
+              </div>
+            `).join('') +
+            `</div>`;
+        }
+
         detailTitle.innerHTML = `
-          <span style="display:block;font-size:22px;font-weight:700;color:#fff;margin-bottom:8px;">${data.title || data.name || ""}</span>
-          ${data.desc ? `<p style="font-size:14px;color:rgba(255,255,255,0.72);margin:8px 0 16px;line-height:1.6;font-family:'Inter',sans-serif;">${data.desc}</p>` : ''}
+          <div style="display:inline-block;font-size:12px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:${data.accent || 'var(--accent)'};margin-bottom:6px;">${data.cat || ''} &middot; ${data.year || ''}</div>
+          <span style="display:block;font-size:clamp(18px, 2.6vw, 24px);font-weight:700;color:#fff;margin-bottom:8px;line-height:1.3;">${data.title || data.name || ""}</span>
+          ${data.desc ? `<p style="font-size:13.5px;color:rgba(255,255,255,0.76);margin:8px auto 14px;max-width:700px;line-height:1.65;font-family:'Inter',sans-serif;">${data.desc}</p>` : ''}
+          ${extraHtml}
           ${data.github ? `
-            <div>
+            <div style="margin-top:12px;">
               <a href="${data.github}" target="_blank" rel="noopener" class="wk-detail-github" style="display:inline-flex;align-items:center;gap:10px;">
                 <svg class="ph-icon" viewBox="0 0 256 256" style="width:18px;height:18px;" fill="currentColor"><path d="M208.31,75.68A59.78,59.78,0,0,0,202.93,28,8,8,0,0,0,196,24a59.75,59.75,0,0,0-48,24H124A59.75,59.75,0,0,0,76,24a8,8,0,0,0-6.93,4,59.78,59.78,0,0,0-5.38,47.68A58.14,58.14,0,0,0,56,104v8a56.06,56.06,0,0,0,48.44,55.47A39.8,39.8,0,0,0,96,192v8H72a24,24,0,0,1-24-24A40,40,0,0,0,8,136a8,8,0,0,0,0,16,24,24,0,0,1,24,24,40,40,0,0,0,40,40H96v16a8,8,0,0,0,16,0V192a24,24,0,0,1,48,0v40a8,8,0,0,0,16,0V192a39.8,39.8,0,0,0-8.44-24.53A56.06,56.06,0,0,0,216,112v-8A58.14,58.14,0,0,0,208.31,75.68ZM200,112a40,40,0,0,1-40,40H112a40,40,0,0,1-40-40v-8a41.74,41.74,0,0,1,6.9-22.48A8,8,0,0,0,80,73.83a43.81,43.81,0,0,1,.79-33.58,43.88,43.88,0,0,1,32.32,20.06A8,8,0,0,0,119.82,64h32.35a8,8,0,0,0,6.74-3.69,43.87,43.87,0,0,1,32.32-20.06A43.81,43.81,0,0,1,192,73.83a8.09,8.09,0,0,0,1,7.65A41.72,41.72,0,0,1,200,104Z"/></svg>
                 <span>View Source on GitHub</span>

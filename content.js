@@ -38,16 +38,45 @@ const heroContent = {
     projects: [
       {
         key: "hand-automation",
-        name: "Hologram Vision AI",
+        name: "BASEERA (بَصِيرَة)",
         img: "assets/work-hand-automation.jpg",
         w: 800,
         h: 600,
-        cat: "Computer Vision · 3D AR",
+        cat: "Assistive AI · Healthcare · Computer Vision",
         year: "2026",
         accent: "#00f0ff",
-        title: "Hologram Vision & Hand Gesture Suite (Real-Time 3D Holograms & AR Bio-Scanner)",
+        title: "BASEERA (بَصِيرَة) — AI Kinetic Suite for Assistive, Healthcare & Rehabilitation Tech",
         github: "https://github.com/AhmdArFa/hand-automation",
-        desc: "Interactive computer vision suite using OpenCV, MediaPipe 3D hand tracking (21 landmarks @ 60 FPS), Three.js holograms, and FastAPI. Features sacred geometry pinning in thin air, magnetic arc fusion, cranial X-ray bio-scanner, and gesture spell combos.",
+        desc: "منصة ذكاء اصطناعي إنسانية ورعاية صحية تحول كاميرا الويب العادية إلى منظومة تتبع كينيتيكي ثلاثية الأبعاد (21 مفصلاً تشريحياً @ 60 FPS) محلياً 100% بدون إنترنت عبر MediaPipe WASM و OpenCV. تضم 4 عيادات ووحدات مساعدة بالإضافة إلى استوديو الهولوجرام ثلاثي الأبعاد.",
+        quote: "تسخير الذكاء الاصطناعي ليكون عوناً للإنسان: صوتاً لمن لا يستطيع الكلام، وعيادة تأهيل حركي، وحرية تحكم لذوي الشلل، ودرعاً معقماً في غرف العمليات الجراحية.",
+        badges: ["60 FPS Real-Time", "21 3D Landmarks", "100% Offline WASM & TFLite", "Zero Wearables", "FastAPI & OpenCV"],
+        modules: [
+          {
+            name: "🧏‍♂️ مُتَكَلِّم (Mutakallim)",
+            sub: "مترجم لغة الإشارة واستغاثة الطوارئ SOS",
+            desc: "ترجمة فورية لعشر إشارات يومية إلى صوت عربي طبيعي، مع تواصل صوتي ثنائي الاتجاه، ونظام استغاثة SOS فوري عند إشارة الخطر العالمية."
+          },
+          {
+            name: "🏥 تَعَافِي (Ta'afi)",
+            sub: "عيادة التأهيل والعلاج الطبيعي الحركي",
+            desc: "حساب زوايا مفاصل الأصابع الخمسة بدقة (0°-180°)، مؤشر مرونة اليد ROM، 4 بروتوكولات تمارين طبية موجهة، وتصدير تقرير طبي سريري."
+          },
+          {
+            name: "🖱️ طَلِيق (Taleeq)",
+            sub: "الفأرة الهوائية ولوحة المفاتيح اللاتلامسية",
+            desc: "تتبع رأس السبابة بفلتر مانع للرعشة (EMA)، نقر تلقائي بالثبات (Dwell Click) لذوي الشلل، وتصفح ولوحة مفاتيح هوائية عربية كاملة."
+          },
+          {
+            name: "🩺 طَبِيب (Tabib)",
+            sub: "مستعرض الأشعة والتشريح الطبي المعقم",
+            desc: "استعراض صور الأشعة (X-Ray / MRI / CT) في الهواء بغرف العمليات المعقمة، تكبير حتى 350%، ومسطرة قياس رقمية بالمليمتر."
+          },
+          {
+            name: "⚡ استوديو الهولوجرام 3D",
+            sub: "Hologram Studio & Cranial Bio-Scanner",
+            desc: "تثبيت الأشكال الهندسية النيونية بالهواء، دمجها بصواعق كهربائية، وماسح بيولوجي لعظام الوجه والجمجمة وعوالم Three.js التفاعلية."
+          }
+        ]
       },
       {
         key: "nilex",
@@ -142,8 +171,8 @@ const heroContent = {
       {
         no: "01",
         title: "Applied AI & Computer Vision",
-        description: "Training convolutional backbones, YOLOv8 detectors, and OCR extraction pipelines that process document streams with sub-second inference.",
-        tags: ["PyTorch", "YOLOv8", "OpenCV", "Tesseract OCR", "ResNet-50", "Scikit-Learn"],
+        description: "Architecting convolutional backbones, YOLOv8 detectors, MediaPipe 3D kinetic biomechanics, and OCR extraction pipelines that process visual streams with sub-second inference.",
+        tags: ["PyTorch", "YOLOv8", "MediaPipe 3D", "OpenCV", "Tesseract OCR", "ResNet-50", "Scikit-Learn"],
       },
       {
         no: "02",
@@ -174,7 +203,7 @@ const heroContent = {
     skills: {
       title: "I Work With",
       groups: [
-        { name: "AI & ML", items: ["PyTorch", "YOLOv8", "OpenCV", "Scikit-Learn", "Transformers", "RAG", "Tesseract OCR"] },
+        { name: "AI & ML", items: ["PyTorch", "YOLOv8", "OpenCV", "MediaPipe 3D", "Scikit-Learn", "Transformers", "RAG", "Tesseract OCR"] },
         { name: "Data & BI", items: ["Power BI (PL-300)", "Microsoft Fabric", "DAX", "SQL Server", "PostgreSQL", "Pandas", "NumPy"] },
         { name: "Backend & Cloud", items: ["FastAPI", "JWT Auth", "Docker", "Microsoft Azure", "REST APIs", "Linux"] },
         { name: "Languages", items: ["Python", "SQL", "R", "JavaScript", "HTML5 / CSS3"] },

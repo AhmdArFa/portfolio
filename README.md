@@ -34,7 +34,7 @@ A bespoke, cinematic scroll-driven portfolio engineered with spatial depth, dark
 
 ### 4. 🗂️ 3D Selected Works Dolly Carousel
 Flagship production projects with interactive 3D perspective scroll and direct GitHub source links:
-1. **Hologram Vision & Hand Gesture Suite** — Real-time computer vision suite combining OpenCV, MediaPipe 3D hand tracking (21 landmarks @ 60 FPS), Three.js holograms, air-pinch freezing, and gesture spell engine.
+1. **BASEERA (بَصِيرَة) — AI Kinetic Suite for Assistive & Healthcare Technology** — Comprehensive humanitarian computer vision and touchless accessibility platform powered by in-browser MediaPipe WASM/TFLite (21 3D landmarks @ 60 FPS, 100% offline & client-side). Features 4 clinical & assistive suites: *Mutakallim* (Arabic sign-to-speech translator & smart SOS emergency gesture detection), *Ta'afi* (hand motor rehab clinic measuring 0°-180° joint biomechanics with clinical reports), *Taleeq* (touchless air mouse with tremor filter & on-screen Arabic air keyboard), *Tabib* (sterile touchless radiology DICOM viewer with air calipers), and *3D Hologram Studio*.
 2. **NILEX E-Commerce Ecosystem** — Full-stack platform with FastAPI backend, PostgreSQL, and scalable microservices.
 3. **Egyptian National ID OCR Pipeline** — Computer vision pipeline for ID card extraction and validation.
 4. **Smart Healthcare & Hospital Management System** — Comprehensive patient, doctor, and clinic management platform.

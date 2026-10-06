@@ -2267,10 +2267,14 @@ html.works-open .wk { display: block; }
   z-index: 50;
   visibility: hidden;
   opacity: 0;
-  display: grid;
-  place-items: center;
-  align-content: center;
-  gap: 3svh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 60px 24px 60px;
+  overflow-y: auto;
+  -webkit-overflow-scrolling: touch;
+  gap: 20px;
   background:
     radial-gradient(62% 24% at 50% 103%, #5c0f08 0%, rgba(30, 4, 2, 0) 70%),
     #060202;
@@ -2283,12 +2287,15 @@ html.works-open .wk { display: block; }
   transition: opacity 0.3s var(--ease-soft);
 }
 
-.wk-detail-media { margin: 0; }
+.wk-detail-media {
+  margin: 0;
+  flex-shrink: 0;
+}
 
 .wk-detail-media img {
   display: block;
   max-width: 86vw;
-  max-height: 64svh;
+  max-height: 48svh;
   border-radius: 14px;
   border: 1px solid rgba(255, 255, 255, 0.1);
   box-shadow: 0 40px 110px -30px rgba(0, 0, 0, 0.85);
@@ -2296,11 +2303,9 @@ html.works-open .wk { display: block; }
 
 .wk-detail-title {
   margin: 0;
-  max-width: 80vw;
+  max-width: 840px;
+  width: 100%;
   text-align: center;
-  font-size: clamp(14px, 2svh, 19px);
-  font-weight: 600;
-  letter-spacing: 0.02em;
   color: rgba(245, 240, 238, 0.9);
 }
 
