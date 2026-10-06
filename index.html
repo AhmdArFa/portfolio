@@ -1,0 +1,723 @@
+<!doctype html>
+<html lang="en" class="no-js">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Ahmed Gamal Arfa — Data & AI Engineer | Validation Specialist (MCIT)</title>
+  <meta name="description" content="Portfolio of Ahmed Gamal Arfa — Data Analyst, Machine Learning and AI Engineer at MCIT. Microsoft Certified Fabric Analytics Engineer & Power BI (PL-300), AWS ML Engineer, PyTorch, YOLOv8, FastAPI.">
+  <meta name="theme-color" content="#050302">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Crect width='16' height='16' rx='4' fill='%23120806'/%3E%3Ccircle cx='8' cy='8' r='3.4' fill='%23ff5a1f'/%3E%3C/svg%3E">
+
+  <!-- Flag JS availability before first paint -->
+  <script>document.documentElement.classList.replace('no-js', 'js')</script>
+
+  <link rel="preload" as="image" href="assets/hero-portrait.jpg" fetchpriority="high">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Anton&family=Archivo:wdth,wght@100..125,500..700&family=Inter:ital,wght@0,400;0,500;0,600;0,700;1,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css?v=20">
+</head>
+<body>
+
+  <!--
+    Layer architecture:
+    01 black base (body) · 02 red atmosphere · 03 ambient light/vignette
+    04 portrait (+ 05 eye highlight inside) · 06 header · 07 typography
+    08 notification · 09 interactive cursor light
+  -->
+  <main>
+  <section class="hero" id="top">
+
+    <!-- L02/03 · Atmosphere (parallax wrapper > animated layers) -->
+    <div class="atmo-parallax" aria-hidden="true">
+      <div class="layer-atmosphere fx fx-atmo">
+        <div class="atmo-wash"></div>
+        <div class="atmo-core"></div>
+        <div class="atmo-floor"></div>
+        <div class="atmo-vignette"></div>
+      </div>
+    </div>
+
+    <!-- L04/05 · Portrait -->
+    <div class="portrait-parallax">
+      <div class="portrait-frame">
+        <div class="portrait-stage fx fx-portrait">
+          <img class="portrait-img" src="assets/hero-portrait.jpg" width="1408" height="1117"
+               alt="Portrait of Ahmed Gamal Arfa, Data and AI Engineer" decoding="async">
+          <div class="portrait-veil fx-veil" aria-hidden="true"></div>
+          <div class="portrait-sweep fx-sweep" aria-hidden="true"></div>
+          <div class="eye-flash eye-flash--right fx-flash" aria-hidden="true"></div>
+          <div class="eye-flash fx-flash" aria-hidden="true"></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Film grain (static, near-invisible) -->
+    <div class="layer-grain" aria-hidden="true"></div>
+
+    <!-- Legibility scrim behind the notification zone -->
+    <div class="scrim-bottom" aria-hidden="true"></div>
+
+    <!-- L07 · Hero typography -->
+    <div class="hero-copy">
+      <h1 class="headline fx fx-headline" data-slot="headline">Ahmed</h1>
+      <div class="role-block">
+        <p class="role">
+          <span class="role-line fx fx-role-1" data-slot="role-1">Data &amp; AI Engineer</span>
+          <span class="role-line fx fx-role-2" data-slot="role-2">Validation Specialist</span>
+        </p>
+        <ul class="hero-meta fx fx-meta" data-slot="meta">
+          <li>AI</li>
+          <li>Power BI</li>
+          <li>MCIT</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- L08 · Notification -->
+    <aside class="notification fx fx-notif" aria-label="Notification">
+      <button class="notif-close" type="button" aria-label="Dismiss notification">
+        <svg viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" aria-hidden="true">
+          <path d="M2.5 2.5l7 7M9.5 2.5l-7 7"/>
+        </svg>
+      </button>
+      <div class="notif-card">
+        <span class="notif-avatar" aria-hidden="true">
+          <span class="notif-badge">
+            <svg viewBox="0 0 12 8" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M3.4 1 1 4l2.4 3M8.6 1 11 4 8.6 7"/>
+            </svg>
+          </span>
+        </span>
+        <div class="notif-body">
+          <div class="notif-top">
+            <span class="notif-name" data-slot="notif-name">Ahmed Arfa</span>
+            <span class="notif-time" data-slot="notif-time">now</span>
+          </div>
+          <p class="notif-msg">
+            <strong data-slot="notif-lead">MCIT Validation</strong>
+            <span data-slot="notif-message">Data Analyst &amp; AI Engineer at MCIT — building automated OCR validation and intelligent BI architectures.</span>
+          </p>
+        </div>
+      </div>
+    </aside>
+
+    <!-- L06 · Header -->
+    <header class="site-header">
+      <div class="header-pill fx fx-header">
+        <a class="brand" href="#top" aria-label="Ahmed Gamal Arfa — home">
+          <svg class="brand-mark" viewBox="0 0 44 24" fill="none" stroke="currentColor" stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M12 4.5 4.5 12l7.5 7.5"/>
+            <path d="M32 4.5 39.5 12 32 19.5"/>
+            <path d="M25.5 3.5 18.5 20.5"/>
+          </svg>
+          <span class="brand-dot" aria-hidden="true"></span>
+        </a>
+
+        <nav class="site-nav" aria-label="Primary">
+          <ul>
+            <li><a class="nav-link is-active" href="#work" aria-current="page" data-slot="nav-0"><span class="nav-dot" aria-hidden="true"></span>Work</a></li>
+            <li><a class="nav-link" href="#section-03" data-slot="nav-1">About</a></li>
+            <li><a class="nav-link" href="#projects" data-slot="nav-2">Projects</a></li>
+            <li><a class="nav-link" href="#think" data-slot="nav-3">The Mind</a></li>
+            <li><a class="nav-link" href="#method" data-slot="nav-4">Skills</a></li>
+            <li><a class="nav-link" href="#certifications" data-slot="nav-5">MCIT &amp; Certs</a></li>
+            <li><a class="nav-link" href="#contact" data-slot="nav-6">Contact</a></li>
+          </ul>
+        </nav>
+
+        <div class="header-actions">
+          <a class="cta" href="#contact">
+            <span data-slot="cta">Let&rsquo;s Talk</span>
+            <svg class="cta-arrow" viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M3.2 10.8 10.8 3.2M5 3.2h5.8V9"/>
+            </svg>
+          </a>
+          <button class="theme-btn" type="button" aria-label="Switch theme">
+            <svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" aria-hidden="true">
+              <circle cx="10" cy="10" r="3.3"/>
+              <path d="M10 1.6v2.1M10 16.3v2.1M1.6 10h2.1M16.3 10h2.1M4.1 4.1l1.5 1.5M14.4 14.4l1.5 1.5M15.9 4.1l-1.5 1.5M5.6 14.4l-1.5 1.5"/>
+            </svg>
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <!-- L09 · Interactive cursor light -->
+    <div class="cursor-light" aria-hidden="true"></div>
+
+  </section>
+
+  <!-- ==========================================================
+       SECTION 02 · Where code meets creative thinking
+       ========================================================== -->
+  <section class="s2-pin" id="work" aria-label="Where code meets creative thinking">
+    <div class="s2-stage">
+
+      <div class="s2-comp">
+        <p class="s2-brand s2-meta">
+          <span class="s2-brand-my">MCIT</span><span class="s2-brand-creative">Validation</span><span class="s2-brand-hunch">Team</span>
+        </p>
+
+        <div class="s2-side s2-side--left s2-meta">
+          <p><span>Focus at</span> <strong data-slot="s2-side-l1">MCIT Validation</strong></p>
+          <p><span>Architecting</span> <strong><em data-slot="s2-side-l2">Data Systems.</em></strong></p>
+        </div>
+
+        <div class="s2-side s2-side--right s2-meta">
+          <p><span>Built with</span> <strong data-slot="s2-side-r1">Precision.</strong></p>
+          <p><span>Delivering</span> <strong data-slot="s2-side-r2">Impact.</strong></p>
+        </div>
+
+        <h2 class="s2-title">
+          <span class="s2-mask s2-mask-1"><span class="s2-line s2-line-1"><span class="s2-where">Where</span></span></span>
+          <span class="s2-mask s2-mask-2"><span class="s2-line s2-line-2"><span class="s2-code">Code</span><span class="s2-meets">Meets</span></span></span>
+          <span class="s2-mask s2-mask-3"><span class="s2-line s2-line-3"><span class="s2-creative">Creative</span><span class="s2-thinking">Thinking</span></span></span>
+        </h2>
+
+        <ul class="s2-labels" aria-label="Focus areas">
+          <li class="s2-label-pos s2-pos-ai"><span class="s2-label s2-label--ai">AI.</span></li>
+          <li class="s2-label-pos s2-pos-sys"><span class="s2-label s2-label--sys">SYSTEMS.</span></li>
+          <li class="s2-label-pos s2-pos-web"><span class="s2-label s2-label--web">POWER BI.</span></li>
+          <li class="s2-label-pos s2-pos-api"><span class="s2-label s2-label--api">APIs.</span></li>
+          <li class="s2-label-pos s2-pos-auto"><span class="s2-label s2-label--auto">VALIDATION.</span></li>
+        </ul>
+      </div>
+
+      <div class="s2-rail s2-rail--left s2-meta" aria-hidden="true">
+        <span class="s2-rail-dot"></span>
+        <ul class="s2-rail-list">
+          <li>Analyze</li><li>Model</li><li>Validate</li><li>Deploy</li><li>Impact</li>
+        </ul>
+        <span class="s2-rail-line s2-rail-line--a"></span>
+        <span class="s2-rail-line s2-rail-line--b"></span>
+      </div>
+
+      <div class="s2-rail s2-rail--right s2-meta" aria-hidden="true">
+        <span class="s2-rail-dot"></span>
+        <ul class="s2-rail-list">
+          <li>Analyze</li><li>Model</li><li>Validate</li><li>Deploy</li><li>Impact</li>
+        </ul>
+        <span class="s2-rail-line s2-rail-line--a"></span>
+        <span class="s2-rail-line s2-rail-line--b"></span>
+      </div>
+
+      <!-- SECTION 02 → 03 · puzzle transition layers -->
+      <div class="s3-atmo" aria-hidden="true">
+        <p class="s3-credit s3-credit--l">Ahmed Gamal Arfa</p>
+        <p class="s3-credit s3-credit--r">&copy; 2026 MCIT Validation</p>
+      </div>
+
+      <!-- SECTION 03 · About Me -->
+      <div class="p3" id="section-03">
+        <div class="p3-dim" aria-hidden="true">
+          <span>Intelligent &amp; Rigorous</span>
+          <span>Architectures for Enterprise</span>
+          <span class="p3-dim-3">Ready to Scale</span>
+        </div>
+
+        <p class="p3-corner p3-corner--l">Transforming <b>Raw Data</b> to Impact</p>
+        <p class="p3-corner p3-corner--r">github.com/AhmdArFa</p>
+
+        <!-- About Me composition -->
+        <div class="ab-comp">
+          <span class="ab-title-mask">
+            <h2 class="ab-title"><span class="ab-title-main">About</span><span class="ab-title-script">Me</span></h2>
+          </span>
+
+          <div class="ab-boxes">
+            <div class="ab-box-pos">
+              <button class="ab-box ab-box--who" type="button" data-ab="who" aria-expanded="false">
+                <span class="ab-box-in">
+                  <span class="ab-num">01</span>
+                  <span class="ab-kicker">( Identity )</span>
+                  <img class="ab-img" src="assets/hero-portrait.jpg" alt="Ahmed Gamal Arfa" loading="lazy" decoding="async">
+                  <span class="ab-box-title" data-slot="ab-who-title">Who<br>I Am</span>
+                  <span class="ab-line"></span>
+                  <span class="ab-sub" data-slot="ab-who-sub">Ahmed Gamal Arfa &mdash; Data &amp; AI Engineer at MCIT.</span>
+                  <span class="ab-arrow"><svg viewBox="0 0 18 12" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M1 6h15M11 1l5 5-5 5"/></svg></span>
+                </span>
+              </button>
+            </div>
+
+            <div class="ab-box-pos">
+              <button class="ab-box ab-box--what" type="button" data-ab="what" aria-expanded="false">
+                <span class="ab-box-in">
+                  <span class="ab-num">02</span>
+                  <span class="ab-kicker">( Craft )</span>
+                  <img class="ab-img ab-img--air" src="assets/aircraft.jpg" alt="Craft" loading="lazy" decoding="async">
+                  <span class="ab-box-title" data-slot="ab-what-title">What<br>I Do</span>
+                  <span class="ab-line"></span>
+                  <span class="ab-sub" data-slot="ab-what-sub">AI &middot; Computer Vision &middot; Power BI &middot; FastAPI</span>
+                  <span class="ab-arrow"><svg viewBox="0 0 18 12" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M1 6h15M11 1l5 5-5 5"/></svg></span>
+                </span>
+              </button>
+            </div>
+
+            <div class="ab-box-pos">
+              <button class="ab-box ab-box--think" type="button" data-ab="think" aria-expanded="false">
+                <span class="ab-box-in">
+                  <span class="ab-num">03</span>
+                  <span class="ab-kicker">( Approach )</span>
+                  <img class="ab-img" src="assets/portrait.jpg" alt="Approach" loading="lazy" decoding="async">
+                  <span class="ab-box-title" data-slot="ab-think-title">How<br>I Think</span>
+                  <span class="ab-line"></span>
+                  <span class="ab-sub" data-slot="ab-think-sub">Analyze &middot; Model &middot; Validate &middot; Deploy &middot; Impact</span>
+                  <span class="ab-arrow"><svg viewBox="0 0 18 12" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M1 6h15M11 1l5 5-5 5"/></svg></span>
+                </span>
+              </button>
+            </div>
+          </div>
+
+          <div class="ab-foot">
+            <span>( 03 &middot; About )</span>
+            <span>AI &middot; Power BI &middot; MCIT</span>
+          </div>
+        </div>
+
+        <!-- expanded state -->
+        <div class="ab-detail" role="region" aria-label="About details">
+          <button class="ab-close" type="button" aria-label="Close">
+            <svg viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" aria-hidden="true"><path d="M2.5 2.5l7 7M9.5 2.5l-7 7"/></svg>
+          </button>
+
+          <div class="ab-view" data-ab="who">
+            <div class="ab-view-copy">
+              <p class="ab-eyebrow" data-slot="ab-who-eyebrow">01 &mdash; Who I Am</p>
+              <h3 class="ab-head" data-slot="ab-who-head">Ahmed Gamal Arfa</h3>
+              <p class="ab-text" data-slot="ab-who-text">Data and AI professional with proven impact across enterprise Business Intelligence, computer vision validation, and scalable machine learning pipelines. Microsoft Certified Fabric Analytics Engineer & Power BI PL-300 Associate. Currently building automated OCR validation and secure FastAPI services at MCIT.</p>
+              <ul class="ab-tags"><li>AI</li><li>Power BI</li><li>FastAPI</li><li>MCIT</li></ul>
+            </div>
+            <div class="ab-view-media"><img src="assets/hero-portrait.jpg" alt="Ahmed Gamal Arfa" loading="lazy" decoding="async"></div>
+          </div>
+
+          <div class="ab-view" data-ab="think">
+            <div class="ab-view-copy">
+              <p class="ab-eyebrow" data-slot="ab-think-eyebrow">03 &mdash; How I Think</p>
+              <h3 class="ab-head ab-head--quote">&ldquo;Without data you're just another person with an opinion. Without validation, data is just noise.&rdquo;</h3>
+              <p class="ab-attr">&mdash; W. Edwards Deming &middot; Adapted</p>
+              <p class="ab-text" data-slot="ab-think-text">Analyze &middot; Model &middot; Validate &middot; Deploy &middot; Impact.</p>
+            </div>
+            <div class="ab-view-media"><img src="assets/portrait.jpg" alt="Portrait" loading="lazy" decoding="async"></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="s3-window" aria-hidden="true">
+        <div class="s3-ghost"></div>
+        <div class="s3-frags"></div>
+        <div class="s3-cluster"></div>
+        <div class="s3-window-frame"></div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ==========================================================
+       SECTION 05 · BIG ROBOT (3D Spline Experience)
+       ========================================================== -->
+  <section class="rb" id="think" aria-label="How I think about technology">
+    <div class="rb-pin">
+      <div class="rb-stage-wrap">
+        <div class="rb-env" aria-hidden="true">
+          <span class="rb-glow"></span>
+          <span class="rb-grid"></span>
+          <span class="rb-vignette"></span>
+        </div>
+
+        <p class="rb-tag rb-tag--l" data-slot="rb-label-l">Data Analyst &amp; AI Engineer</p>
+        <p class="rb-tag rb-tag--r" data-slot="rb-label-r">MCIT Validation &middot; Deep Learning</p>
+
+        <div class="rb-space">
+          <div class="rb-stage">
+            <canvas class="rb-canvas" aria-hidden="true"></canvas>
+          </div>
+          <div class="rb-panels"><!-- panels injected from content.js --></div>
+        </div>
+
+        <div class="rb-center">
+          <p class="rb-eyebrow" data-slot="rb-eyebrow">( 05 &middot; The Mind )</p>
+          <h2 class="rb-title">
+            <span data-slot="rb-title-1">I build intelligent systems that</span>
+            <span data-slot="rb-title-2">turn raw data into verified impact.</span>
+          </h2>
+          <p class="rb-sub" data-slot="rb-sub"></p>
+          <p class="rb-hint">
+            <span data-slot="rb-hint">Scroll to move through the disciplines.</span>
+            <span class="rb-hint-arrow" aria-hidden="true">&darr;</span>
+          </p>
+        </div>
+
+        <span class="rb-depth" aria-hidden="true"></span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================
+       SECTION 06 · EDITORIAL / SKILLS (Scroll-Choreographed)
+       ========================================================== -->
+  <section class="ed" id="method" aria-label="Data is my canvas">
+    <div class="ed-pin">
+      <div class="ed-stage">
+        <div class="ed-env" aria-hidden="true"><span class="ed-glow"></span></div>
+
+        <div class="ed-grid">
+          <div class="ed-left">
+            <p class="ed-eyebrow" data-slot="ed-eyebrow">( 06 &middot; The Method )</p>
+            <h2 class="ed-statement">
+              <span class="ed-mask"><span class="ed-line" data-slot="ed-line-1">Data is my canvas.</span></span>
+              <span class="ed-mask"><span class="ed-line" data-slot="ed-line-2">Validation is my standard.</span></span>
+            </h2>
+            <p class="ed-note" data-slot="ed-note"></p>
+          </div>
+
+          <div class="ed-right">
+            <p class="ed-skills-title" data-slot="ed-skills-title">I Work With</p>
+            <div class="ed-reel"><div class="ed-reel-in" data-slot="ed-reel"><!-- built from content.js --></div></div>
+          </div>
+        </div>
+
+        <span class="ed-progress" aria-hidden="true"></span>
+      </div>
+    </div>
+
+    <!-- calm ending -->
+    <div class="ed-tail">
+      <div class="ed-tail-in">
+        <div class="ed-mindset">
+          <p class="ed-mindset-title" data-slot="ed-mindset-title">Analyze &rarr; Model &rarr; Validate &rarr; Deploy</p>
+          <ul class="ed-mindset-lines" data-slot="ed-mindset-lines"></ul>
+        </div>
+
+        <div class="ed-exploring">
+          <p class="ed-block-title" data-slot="ed-exploring-title">Currently Exploring</p>
+          <ul class="ed-explore-list" data-slot="ed-exploring-items"></ul>
+        </div>
+
+        <div class="ed-end">
+          <h3 class="ed-end-title" data-slot="ed-end-lines"></h3>
+          <p class="ed-end-note" data-slot="ed-end-note"></p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================
+       SECTION 05b · KINETIC ARCHITECTURAL TICKER (Discipline Rails)
+       ========================================================== -->
+  <aside class="features-bar-strip" aria-label="Technical disciplines">
+    <div class="features-bar-inner">
+      <span class="features-bar-label">MCIT &bull; CORE DISCIPLINES</span>
+      <div class="features-bar-track">
+        <div class="features-bar-stream">
+          <span>NATIONAL ID OCR PIPELINE</span><span class="features-bar-dot">&bull;</span>
+          <span>FASTAPI ASYNCHRONOUS SERVICES</span><span class="features-bar-dot">&bull;</span>
+          <span>MICROSOFT POWER BI (PL-300)</span><span class="features-bar-dot">&bull;</span>
+          <span>EGYPTIAN MCIT VALIDATION</span><span class="features-bar-dot">&bull;</span>
+          <span>MICROSOFT FABRIC &amp; ETL</span><span class="features-bar-dot">&bull;</span>
+          <span>PYTORCH DEEP LEARNING</span><span class="features-bar-dot">&bull;</span>
+          <span>COMPUTER VISION (OPENCV)</span><span class="features-bar-dot">&bull;</span>
+          <span>POSTGRESQL &amp; SQL QUERY OPTIMIZATION</span><span class="features-bar-dot">&bull;</span>
+        </div>
+        <div class="features-bar-stream" aria-hidden="true">
+          <span>NATIONAL ID OCR PIPELINE</span><span class="features-bar-dot">&bull;</span>
+          <span>FASTAPI ASYNCHRONOUS SERVICES</span><span class="features-bar-dot">&bull;</span>
+          <span>MICROSOFT POWER BI (PL-300)</span><span class="features-bar-dot">&bull;</span>
+          <span>EGYPTIAN MCIT VALIDATION</span><span class="features-bar-dot">&bull;</span>
+          <span>MICROSOFT FABRIC &amp; ETL</span><span class="features-bar-dot">&bull;</span>
+          <span>PYTORCH DEEP LEARNING</span><span class="features-bar-dot">&bull;</span>
+          <span>COMPUTER VISION (OPENCV)</span><span class="features-bar-dot">&bull;</span>
+          <span>POSTGRESQL &amp; SQL QUERY OPTIMIZATION</span><span class="features-bar-dot">&bull;</span>
+        </div>
+      </div>
+    </div>
+  </aside>
+
+  <!-- ==========================================================
+       SECTION 06.5 · MCIT VALIDATION & VERIFIED CERTIFICATIONS WALL (34 CERTS)
+       Dedicated Government Internship Showcase & 34 Real Certs Gallery
+       ========================================================== -->
+  <section class="mcit-certs-section" id="certifications" aria-label="MCIT Validation & Certifications">
+    <div class="mcit-container">
+      
+      <!-- Section Header -->
+      <p class="mcit-section-eyebrow">[+] OFFICIAL HIGHLIGHT &amp; CREDENTIALS</p>
+      <h2 class="mcit-section-title">MCIT VALIDATION &amp; CERTIFICATIONS</h2>
+      <p class="mcit-section-desc">
+        Production contributions to mission-critical Egyptian public digital services at the Ministry of Communications and Information Technology, backed by 34 verified global industry credentials from Microsoft, AWS, Google, Stanford, Duke, and ITI.
+      </p>
+
+      <!-- MCIT Government Spotlight Banner Card -->
+      <div class="mcit-spotlight-box">
+        <div class="mcit-spotlight-top">
+          <span class="mcit-gov-tag">🏛️ MINISTRY OF COMMUNICATIONS &amp; INFORMATION TECHNOLOGY (MCIT)</span>
+          <span class="mcit-role-tag">Active Production Role &middot; Validation Team</span>
+        </div>
+        <h3 style="font-size: clamp(22px, 3vw, 32px); color: #fff; margin: 0 0 12px; font-weight: 700;">
+          National Validation Architecture &amp; Enterprise AI Pipeline
+        </h3>
+        <p style="font-size: 14.5px; color: var(--text-mid); line-height: 1.65; max-width: 860px; margin: 0;">
+          Engineering mission-critical automated pipelines for Egyptian citizen document verification, combining deep computer vision models, asynchronous FastAPI microservices, JWT authentication, and executive Business Intelligence.
+        </p>
+
+        <div class="mcit-spotlight-grid">
+          <div class="mcit-pillar-card">
+            <div class="mcit-pillar-icon">
+              <svg class="ph-icon" viewBox="0 0 256 256" fill="currentColor" aria-hidden="true"><path d="M247.31,124.76c-.35-.79-8.82-19.58-27.65-38.41C194.57,61.26,162.88,48,128,48S61.43,61.26,36.34,86.35C17.51,105.18,9,124,8.69,124.76a8,8,0,0,0,0,6.5c.35.79,8.82,19.57,27.65,38.4C61.43,194.74,93.12,208,128,208s66.57-13.26,91.66-38.34c18.83-18.83,27.3-37.61,27.65-38.4A8,8,0,0,0,247.31,124.76ZM128,192c-30.78,0-57.67-11.19-79.93-33.25A133.47,133.47,0,0,1,25,128,133.33,133.33,0,0,1,48.07,97.25C70.33,75.19,97.22,64,128,64s57.67,11.19,79.93,33.25A133.46,133.46,0,0,1,231.05,128C223.84,141.46,192.43,192,128,192Zm0-112a48,48,0,1,0,48,48A48.05,48.05,0,0,0,128,80Zm0,80a32,32,0,1,1,32-32A32,32,0,0,1,128,160Z"/></svg>
+            </div>
+            <h4>National ID OCR Validation</h4>
+            <p>Built automated OpenCV &amp; Tesseract OCR pipelines to detect Egyptian ID cards, correct skew, binarize text, and extract structured fields with sub-second accuracy.</p>
+            <div class="mcit-pillar-chips">
+              <span>OpenCV</span><span>Tesseract OCR</span><span>Computer Vision</span>
+            </div>
+          </div>
+
+          <div class="mcit-pillar-card">
+            <div class="mcit-pillar-icon">
+              <svg class="ph-icon" viewBox="0 0 256 256" fill="currentColor" aria-hidden="true"><path d="M152,96H104a8,8,0,0,0-8,8v48a8,8,0,0,0,8,8h48a8,8,0,0,0,8-8V104A8,8,0,0,0,152,96Zm-8,48H112V112h32Zm88,0H216V112h16a8,8,0,0,0,0-16H216V56a16,16,0,0,0-16-16H160V24a8,8,0,0,0-16,0V40H112V24a8,8,0,0,0-16,0V40H56A16,16,0,0,0,40,56V96H24a8,8,0,0,0,0,16H40v32H24a8,8,0,0,0,0,16H40v40a16,16,0,0,0,16,16H96v16a8,8,0,0,0,16,0V216h32v16a8,8,0,0,0,16,0V216h40a16,16,0,0,0,16-16V160h16a8,8,0,0,0,0-16Zm-32,56H56V56H200v95.87s0,.09,0,.13,0,.09,0,.13V200Z"/></svg>
+            </div>
+            <h4>FastAPI &amp; JWT Security</h4>
+            <p>Architected asynchronous REST microservices with PostgreSQL transactions, role-based authorization, and tokenized JWT auth for validation endpoints.</p>
+            <div class="mcit-pillar-chips">
+              <span>FastAPI</span><span>JWT Auth</span><span>PostgreSQL</span>
+            </div>
+          </div>
+
+          <div class="mcit-pillar-card">
+            <div class="mcit-pillar-icon">
+              <svg class="ph-icon" viewBox="0 0 256 256" fill="currentColor" aria-hidden="true"><path d="M224,200h-8V40a8,8,0,0,0-8-8H152a8,8,0,0,0-8,8V80H96a8,8,0,0,0-8,8v40H48a8,8,0,0,0-8,8v64H32a8,8,0,0,0,0,16H224a8,8,0,0,0,0-16ZM160,48h40V200H160ZM104,96h40V200H104ZM56,144H88v56H56Z"/></svg>
+            </div>
+            <h4>Digilians Executive Power BI</h4>
+            <p>Constructed executive dashboards across Healthcare, Sales, and HR with advanced DAX measures and star schemas, slashing preparation time by 60%.</p>
+            <div class="mcit-pillar-chips">
+              <span>Power BI (PL-300)</span><span>Fabric</span><span>DAX Modeling</span>
+            </div>
+          </div>
+
+          <div class="mcit-pillar-card">
+            <div class="mcit-pillar-icon">
+              <svg class="ph-icon" viewBox="0 0 256 256" fill="currentColor" aria-hidden="true"><path d="M251.76,88.94l-120-64a8,8,0,0,0-7.52,0l-120,64a8,8,0,0,0,0,14.12L32,117.87v48.42a15.91,15.91,0,0,0,4.06,10.65C49.16,191.53,78.51,216,128,216a130,130,0,0,0,48-8.76V240a8,8,0,0,0,16,0V199.51a115.63,115.63,0,0,0,27.94-22.57A15.91,15.91,0,0,0,224,166.29V117.87l27.76-14.81a8,8,0,0,0,0-14.12ZM128,200c-43.27,0-68.72-21.14-80-33.71V126.4l76.24,40.66a8,8,0,0,0,7.52,0L176,143.47v46.34C163.4,195.69,147.52,200,128,200Zm80-33.75a97.83,97.83,0,0,1-16,14.25V134.93l16-8.53ZM188,118.94l-.22-.13-56-29.87a8,8,0,0,0-7.52,14.12L171,128l-43,22.93L25,96,128,41.07,231,96Z"/></svg>
+            </div>
+            <h4>Military Academy AI Diploma</h4>
+            <p>Enrolled in the Professional Diploma in Data Analysis and AI in partnership with MCIT Digilians (2025–2026), mastering enterprise ML and data warehousing.</p>
+            <div class="mcit-pillar-chips">
+              <span>Military Academy</span><span>ETL</span><span>Machine Learning</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Controls: Live Search & Category Tabs -->
+      <div class="certs-controls">
+        <div class="certs-search-bar">
+          <span class="certs-search-icon">
+            <svg class="ph-icon" viewBox="0 0 256 256" fill="currentColor" aria-hidden="true"><path d="M247.31,124.76c-.35-.79-8.82-19.58-27.65-38.41C194.57,61.26,162.88,48,128,48S61.43,61.26,36.34,86.35C17.51,105.18,9,124,8.69,124.76a8,8,0,0,0,0,6.5c.35.79,8.82,19.57,27.65,38.4C61.43,194.74,93.12,208,128,208s66.57-13.26,91.66-38.34c18.83-18.83,27.3-37.61,27.65-38.4A8,8,0,0,0,247.31,124.76ZM128,192c-30.78,0-57.67-11.19-79.93-33.25A133.47,133.47,0,0,1,25,128,133.33,133.33,0,0,1,48.07,97.25C70.33,75.19,97.22,64,128,64s57.67,11.19,79.93,33.25A133.46,133.46,0,0,1,231.05,128C223.84,141.46,192.43,192,128,192Zm0-112a48,48,0,1,0,48,48A48.05,48.05,0,0,0,128,80Zm0,80a32,32,0,1,1,32-32A32,32,0,0,1,128,160Z"/></svg>
+          </span>
+          <input type="text" id="certsSearchInput" class="certs-search-input" placeholder="Search 34 achievements by title, issuer, or Arabic keyword...">
+        </div>
+
+        <div class="certs-tabs">
+          <button type="button" class="certs-tab-btn is-active" data-filter="all">All Credentials (34)</button>
+          <button type="button" class="certs-tab-btn" data-filter="mcit">MCIT &amp; ITI (2)</button>
+          <button type="button" class="certs-tab-btn" data-filter="microsoft">Microsoft (3)</button>
+          <button type="button" class="certs-tab-btn" data-filter="aws">AWS &amp; Manara (2)</button>
+          <button type="button" class="certs-tab-btn" data-filter="ai">AI &amp; LLMs (6)</button>
+          <button type="button" class="certs-tab-btn" data-filter="google">Google Data (11)</button>
+          <button type="button" class="certs-tab-btn" data-filter="academic">Academic &amp; DTU (6)</button>
+          <button type="button" class="certs-tab-btn" data-filter="linkedin">Professional (4)</button>
+        </div>
+      </div>
+
+      <!-- Dynamic Cards Grid (Rendered from catalog.json with real photos) -->
+      <div class="certs-wall-grid" id="certsContainer">
+        <!-- Injected dynamically by script.js -->
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ==========================================================
+       SECTION 07 · SMALL ROBOT (Spline 3D Minimal Chapter)
+       ========================================================== -->
+  <section class="sr" id="curious" aria-label="Still curious">
+    <div class="sr-env" aria-hidden="true">
+      <span class="sr-glow"></span>
+      <span class="sr-vignette"></span>
+    </div>
+
+    <div class="sr-inner">
+      <div class="sr-copy">
+        <p class="sr-eyebrow" data-slot="sr-eyebrow">( 07 &middot; Still Curious )</p>
+        <h2 class="sr-title">
+          <span data-slot="sr-title-1">Always learning,</span>
+          <span data-slot="sr-title-2">always optimizing.</span>
+        </h2>
+        <p class="sr-sub" data-slot="sr-sub"></p>
+        <p class="sr-note"><span data-slot="sr-note"></span></p>
+      </div>
+
+      <div class="sr-stage">
+        <canvas class="sr-canvas" aria-hidden="true"></canvas>
+      </div>
+    </div>
+  </section>
+
+  </main>
+
+  <!-- ==========================================================
+       SECTION 04 · MY SELECTED WORKS (Hidden 3D Dolly Chapter)
+       ========================================================== -->
+  <div class="wk" id="works" aria-hidden="true">
+    <div class="wk-void" aria-hidden="true">
+      <div class="wk-dim">
+        <span>Functional &amp; Beautiful</span>
+        <span>Designs for Startups</span>
+        <span class="wk-dim-3">Ready to Scale</span>
+      </div>
+      <p class="wk-corner wk-corner--l">Transforming <b>Data</b> to Value</p>
+      <p class="wk-corner wk-corner--r">github.com/AhmdArFa</p>
+    </div>
+
+    <div class="wk-scroll">
+      <div class="wk-track">
+        <div class="wk-stage">
+
+          <div class="wk-head" data-enter style="--d:.08s">
+            <span class="wk-brand">
+              <svg class="wk-brand-mark" viewBox="0 0 44 24" fill="none" stroke="currentColor" stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M12 4.5 4.5 12l7.5 7.5"/><path d="M32 4.5 39.5 12 32 19.5"/><path d="M25.5 3.5 18.5 20.5"/>
+              </svg>
+              <b>Ahmed Gamal Arfa</b>&nbsp;Portfolio
+            </span>
+            <button class="wk-back" type="button" aria-label="Back to About">
+              <svg viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" aria-hidden="true"><path d="M2.5 2.5l7 7M9.5 2.5l-7 7"/></svg>
+            </button>
+          </div>
+
+          <!-- the 3D world: screens are injected here from content.js -->
+          <div class="wk-space"></div>
+
+          <p class="wk-counter" data-enter style="--d:.2s"><b data-wk-idx>01</b> / <span data-wk-total>06</span></p>
+
+        </div>
+      </div>
+    </div>
+
+    <!-- project detail shell -->
+    <div class="wk-detail" role="region" aria-label="Project detail">
+      <button class="wk-detail-close" type="button" aria-label="Back to works">
+        <svg viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" aria-hidden="true"><path d="M2.5 2.5l7 7M9.5 2.5l-7 7"/></svg>
+      </button>
+      <figure class="wk-detail-media"><img alt="" decoding="async"></figure>
+      <div class="wk-detail-title"></div>
+    </div>
+  </div>
+
+  <!-- ==========================================================
+       SECTION 08 · FOOTER (Contact & Social Channels)
+       ========================================================== -->
+  <footer class="ft" id="contact">
+    <div class="ft-env" aria-hidden="true"><span class="ft-glow"></span></div>
+
+    <div class="ft-in">
+      <p class="ft-eyebrow" data-slot="ft-eyebrow">( 08 &middot; Contact )</p>
+
+      <h2 class="ft-headline">
+        <span class="ft-mask"><span class="ft-line" data-slot="ft-head-1">Let&rsquo;s build</span></span>
+        <span class="ft-mask"><span class="ft-line" data-slot="ft-head-2">something extraordinary.</span></span>
+      </h2>
+
+      <p class="ft-line-note" data-slot="ft-line"></p>
+
+      <a class="ft-mail" data-slot-href="ft-mail" href="mailto:anaarafa2019@gmail.com">
+        <span class="ft-mail-label" data-slot="ft-mail-label">Send an email</span>
+        <span class="ft-mail-address" data-slot="ft-mail-address">anaarafa2019@gmail.com</span>
+        <svg class="ft-mail-arrow" viewBox="0 0 18 12" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <path d="M1 6h15M11 1l5 5-5 5"/>
+        </svg>
+      </a>
+
+      <!-- Socials grid -->
+      <div class="ft-social-grid">
+        <a href="https://linkedin.com/in/ahmed-gamal-arfa" target="_blank" rel="noopener" class="ft-social-pill">
+          <svg class="ph-icon" viewBox="0 0 256 256" fill="currentColor" aria-hidden="true"><path d="M216,24H40A16,16,0,0,0,24,40V216a16,16,0,0,0,16,16H216a16,16,0,0,0,16-16V40A16,16,0,0,0,216,24Zm0,192H40V40H216V216ZM96,112v64a8,8,0,0,1-16,0V112a8,8,0,0,1,16,0Zm88,28v36a8,8,0,0,1-16,0V140a20,20,0,0,0-40,0v36a8,8,0,0,1-16,0V112a8,8,0,0,1,15.79-1.78A36,36,0,0,1,184,140ZM100,84A12,12,0,1,1,88,72,12,12,0,0,1,100,84Z"/></svg>
+          <span>LinkedIn</span>
+          <span class="ft-social-arrow">&nearr;</span>
+        </a>
+        <a href="https://github.com/AhmdArFa" target="_blank" rel="noopener" class="ft-social-pill">
+          <svg class="ph-icon" viewBox="0 0 256 256" fill="currentColor" aria-hidden="true"><path d="M208.31,75.68A59.78,59.78,0,0,0,202.93,28,8,8,0,0,0,196,24a59.75,59.75,0,0,0-48,24H124A59.75,59.75,0,0,0,76,24a8,8,0,0,0-6.93,4,59.78,59.78,0,0,0-5.38,47.68A58.14,58.14,0,0,0,56,104v8a56.06,56.06,0,0,0,48.44,55.47A39.8,39.8,0,0,0,96,192v8H72a24,24,0,0,1-24-24A40,40,0,0,0,8,136a8,8,0,0,0,0,16,24,24,0,0,1,24,24,40,40,0,0,0,40,40H96v16a8,8,0,0,0,16,0V192a24,24,0,0,1,48,0v40a8,8,0,0,0,16,0V192a39.8,39.8,0,0,0-8.44-24.53A56.06,56.06,0,0,0,216,112v-8A58.14,58.14,0,0,0,208.31,75.68ZM200,112a40,40,0,0,1-40,40H112a40,40,0,0,1-40-40v-8a41.74,41.74,0,0,1,6.9-22.48A8,8,0,0,0,80,73.83a43.81,43.81,0,0,1,.79-33.58,43.88,43.88,0,0,1,32.32,20.06A8,8,0,0,0,119.82,64h32.35a8,8,0,0,0,6.74-3.69,43.87,43.87,0,0,1,32.32-20.06A43.81,43.81,0,0,1,192,73.83a8.09,8.09,0,0,0,1,7.65A41.72,41.72,0,0,1,200,104Z"/></svg>
+          <span>GitHub</span>
+          <span class="ft-social-arrow">&nearr;</span>
+        </a>
+        <a href="https://www.facebook.com/ahmed.arafa.426817" target="_blank" rel="noopener" class="ft-social-pill">
+          <svg class="ph-icon" viewBox="0 0 256 256" fill="currentColor" aria-hidden="true"><path d="M128,24A104,104,0,1,0,232,128,104.11,104.11,0,0,0,128,24Zm8,191.63V152h24a8,8,0,0,0,0-16H136V112a16,16,0,0,1,16-16h16a8,8,0,0,0,0-16H152a32,32,0,0,0-32,32v24H96a8,8,0,0,0,0,16h24v63.63a88,88,0,1,1,16,0Z"/></svg>
+          <span>Facebook</span>
+          <span class="ft-social-arrow">&nearr;</span>
+        </a>
+        <a href="https://www.instagram.com/arafa8140/" target="_blank" rel="noopener" class="ft-social-pill">
+          <svg class="ph-icon" viewBox="0 0 256 256" fill="currentColor" aria-hidden="true"><path d="M176,24H80A56.06,56.06,0,0,0,24,80v96a56.06,56.06,0,0,0,56,56h96a56.06,56.06,0,0,0,56-56V80A56.06,56.06,0,0,0,176,24Zm40,152a40,40,0,0,1-40,40H80a40,40,0,0,1-40-40V80A40,40,0,0,1,80,40h96a40,40,0,0,1,40,40ZM128,80a48,48,0,1,0,48,48A48.05,48.05,0,0,0,128,80Zm0,80a32,32,0,1,1,32-32A32,32,0,0,1,128,160Zm60-88a12,12,0,1,1-12-12A12,12,0,0,1,188,72Z"/></svg>
+          <span>Instagram</span>
+          <span class="ft-social-arrow">&nearr;</span>
+        </a>
+        <a href="https://wa.me/201090646919" target="_blank" rel="noopener" class="ft-social-pill">
+          <svg class="ph-icon" viewBox="0 0 256 256" fill="currentColor" aria-hidden="true"><path d="M187.58,144.84l-25-10.42a12.08,12.08,0,0,0-13.62,3.15l-9.14,10.66a87.17,87.17,0,0,1-34-34l10.66-9.14a12.08,12.08,0,0,0,3.15-13.62l-10.42-25a12,12,0,0,0-13.88-7.39l-22.3,5.58A12,12,0,0,0,64,80c0,61.76,50.24,112,112,112a12,12,0,0,0,11.38-8.94l5.58-22.3A12,12,0,0,0,187.58,144.84ZM176,176c-53,0-96-43-96-96l19.2-4.8,9,21.5-10,8.55a12,12,0,0,0-3.32,12.6,99.3,99.3,0,0,0,43.25,43.25,12,12,0,0,0,12.6-3.32l8.55-10,21.5,9Z"/></svg>
+          <span>WhatsApp</span>
+          <span class="ft-social-arrow">&nearr;</span>
+        </a>
+      </div>
+
+      <nav class="ft-cols" data-slot="ft-cols" aria-label="Footer"></nav>
+
+      <div class="ft-base">
+        <span class="ft-brand">
+          <svg class="ft-mark" viewBox="0 0 44 24" fill="none" stroke="currentColor" stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M12 4.5 4.5 12l7.5 7.5"/><path d="M32 4.5 39.5 12 32 19.5"/><path d="M25.5 3.5 18.5 20.5"/>
+          </svg>
+          <b data-slot="ft-legal">&copy; 2026 Ahmed Gamal Arfa</b>
+          <i data-slot="ft-note">Data Analyst &amp; AI Engineer &middot; MCIT</i>
+        </span>
+
+        <button class="ft-top" type="button">
+          <span data-slot="ft-top">Back to top</span>
+          <svg viewBox="0 0 12 14" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M6 13V2M1.5 6.5 6 2l4.5 4.5"/>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Certificate Inspection Fullscreen Modal -->
+  <div class="cert-modal-overlay" id="certModalOverlay" role="dialog" aria-modal="true" aria-label="Certificate Preview">
+    <div class="cert-modal-dialog">
+      <button type="button" class="cert-modal-close" id="certModalClose" aria-label="Close modal">&times;</button>
+      <div class="cert-modal-img-holder">
+        <img id="certModalImg" src="" alt="Certificate inspection">
+      </div>
+      <div class="cert-modal-info-box">
+        <div id="certModalIssuer" style="font-family:monospace;font-size:12px;color:var(--accent);letter-spacing:0.1em;text-transform:uppercase;margin-bottom:6px;"></div>
+        <h3 id="certModalTitle"></h3>
+        <div id="certModalArabic" class="cert-modal-arabic-head"></div>
+        <p id="certModalMeta" style="font-family:monospace;font-size:12.5px;color:var(--text-low);margin:0 0 16px;"></p>
+        <div class="cert-modal-actions">
+          <a href="https://linkedin.com/in/ahmed-gamal-arfa" target="_blank" rel="noopener" class="cert-modal-verify-btn">
+            <svg class="ph-icon" viewBox="0 0 256 256" fill="currentColor" aria-hidden="true"><path d="M216,24H40A16,16,0,0,0,24,40V216a16,16,0,0,0,16,16H216a16,16,0,0,0,16-16V40A16,16,0,0,0,216,24Zm0,192H40V40H216V216ZM96,112v64a8,8,0,0,1-16,0V112a8,8,0,0,1,16,0Zm88,28v36a8,8,0,0,1-16,0V140a20,20,0,0,0-40,0v36a8,8,0,0,1-16,0V112a8,8,0,0,1,15.79-1.78A36,36,0,0,1,184,140ZM100,84A12,12,0,1,1,88,72,12,12,0,0,1,100,84Z"/></svg>
+            <span>Verify on LinkedIn</span>
+            <span style="font-size:12px;">&nearr;</span>
+          </a>
+          <a id="certModalDown" href="#" target="_blank" download class="cert-modal-down-btn">
+            <svg class="ph-icon" viewBox="0 0 256 256" fill="currentColor" aria-hidden="true"><path d="M213.66,82.34l-56-56A8,8,0,0,0,152,24H56A16,16,0,0,0,40,40V216a16,16,0,0,0,16,16H200a16,16,0,0,0,16-16V88A8,8,0,0,0,213.66,82.34ZM160,51.31,188.69,80H160ZM200,216H56V40h88V88a8,8,0,0,0,8,8h48V216Zm-32-80a8,8,0,0,1-8,8H96a8,8,0,0,1,0-16h64A8,8,0,0,1,168,136Zm0,32a8,8,0,0,1-8,8H96a8,8,0,0,1,0-16h64A8,8,0,0,1,168,168Z"/></svg>
+            <span>Download Certificate File</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- cinematic black flash between chapters -->
+  <div class="flash" aria-hidden="true"></div>
+
+  <script src="content.js?v=20"></script>
+  <script src="script.js?v=20"></script>
+</body>
+</html>

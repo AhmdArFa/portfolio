@@ -1,0 +1,12 @@
+# OS & editor artifacts
+.DS_Store
+Thumbs.db
+*.swp
+*.bak
+.vscode/
+.idea/
+
+# Raw source archives
+certificate/
+*.tmp
+*.log
